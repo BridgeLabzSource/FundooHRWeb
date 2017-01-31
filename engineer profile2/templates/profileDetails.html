@@ -1,0 +1,52 @@
+<div ng-controller='ProfileDetailsCtrl' id="personalCtrl">
+    <form editable-form name="tableform" onaftersave="saveTable()" id="formsize" ng-init="getProfileData();">
+        <table class="table-condensed" id="personalData">
+            <tr>
+                <td>Diploma</td>
+                <td><span editable-text="user.diploma" e-focus-me="user.isFocused" e-form="tableform">{{user.diploma || '--'}}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Degree</td>
+                <td><span editable-text="user.degree" e-focus-me="user.isFocused" e-form="tableform">{{user.degree || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Discipline</td>
+                <td><span editable-text="user.discipline" e-focus-me="user.isFocused" e-form="tableform">{{user.discipline || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">year of Passing</td>
+                <td><span editable-text="user.yearOfPassing" e-focus-me="user.isFocused" e-form="tableform">{{user.yearOfPassing || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Aggregate in %</td>
+                <td><span editable-text="user.aggregateIn" e-focus-me="user.isFocused" e-form="tableform">{{user.aggregateIn || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Final Year %</td>
+                <td><span editable-text="user.finalYearPercentage" e-focus-me="user.isFocused" e-form="tableform">{{user.finalYearPercentage|| '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Training Institute</td>
+                <td><span editable-text="user.trainingInstitute" e-focus-me="user.isFocused" e-form="tableform">{{user.trainingInstitute || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Training Duration</td>
+                <td><span editable-text="user.trainingPeriod" e-focus-me="user.isFocused" e-form="tableform">{{user.trainingPeriod|| '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Training</td>
+                <td><span editable-text="user.training" e-focus-me="user.isFocused" e-form="tableform">{{user.training || '--' }}</span></td>
+            </tr>
+
+        </table>
+        <!-- buttons -->
+        <div id="editingpad">
+            <button id="save" type="submit" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+            <button id="edit" type="button" class="btn btn-default" ng-show="!tableform.$visible" ng-click="tableform.$show()">
+    <span  id="symbol" class="glyphicon glyphicon-pencil"></span>
+    </button>
+            <button type="button" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel
+    </button>
+        </div>
+    </form>
+</div>

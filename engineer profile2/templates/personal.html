@@ -1,0 +1,58 @@
+<div ng-controller='PersonalCtrl' id="personalCtrl">
+<form editable-form name="tableform" onaftersave="saveTable()" id="formsize" ng-init="getPersonalData();">
+        <table class="table-condensed"  id="personalData">
+                <tr>
+                    <td id="spantd">ID</td>
+                     <td><span editable-text="user.engineerId"  e-focus-me="user.isFocused" e-form="tableform">{{user.engineerId || '--'}}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Email</td>
+                    <td><span editable-text="user.emailId" e-focus-me="user.isFocused" e-form="tableform">{{user.emailId || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Mobile</td>
+                    <td><span editable-text="user.mobile" e-focus-me="user.isFocused" e-form="tableform">{{user.mobile || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Date of Birth</td>
+                    <td><span editable-text="user.dateOfBirth" e-focus-me="user.isFocused" e-form="tableform">{{user.dateOfBirth || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Father Name</td>
+                    <td><span editable-text="user.fatherName" e-focus-me="user.isFocused" e-form="tableform">{{user.fatherName || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Mobile(Father)</td>
+                    <td><span editable-text="user.fatherMobile" e-focus-me="user.isFocused" e-form="tableform">{{user.fatherMobile || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Occupation</td>
+                    <td><span editable-text="user.occupation" e-focus-me="user.isFocused" e-form="tableform">{{user.occupation || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Annual Salary</td>
+                    <td><span editable-text="user.annualSalary" e-focus-me="user.isFocused" e-form="tableform">{{user.annualSalary || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Mumbai Address</td>
+                    <td><span editable-text="user. mumbaiAddress" e-focus-me="user.isFocused" e-form="tableform">{{user.mumbaiAddress || '--' }}</span></td>
+                </tr>
+                <tr>
+                    <td id="spantd">Permenat Adress</td>
+                    <td><span editable-text="user.permenantAddress" e-focus-me="user.isFocused" e-form="tableform">{{user.permenantAddress || '--' }}</span></td>
+                </tr>
+           
+        </table>
+
+ <div id="editingpad">
+
+    <button  id="save" type="submit" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+    <button id="edit" type="button" class="btn btn-default" ng-show="!tableform.$visible" ng-click="tableform.$show()">
+    <span  id="symbol" class="glyphicon glyphicon-pencil"></span>
+    </button>                               
+     <button type="button" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel
+     </button>
+</div>
+
+</form>
+</div>

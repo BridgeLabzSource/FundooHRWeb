@@ -1,0 +1,38 @@
+<div ng-controller='BankCtrl' id="personalCtrl">
+    <form editable-form name="tableform" onaftersave="saveTable()" id="formsize" ng-init="getBankData();">
+        <table class="table-condensed" id="personalData">
+            <tr>
+                <td id="spantd">Account Number</td>
+                <td><span editable-text="user.accountNumber" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.accountNumber || '--'}}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Bank Name</td>
+                <td><span editable-text="user.bankName" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.bankName || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">IFCS Code</td>
+                <td><span editable-text="user.ifscCode" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.ifscCode|| '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">PAN</td>
+                <td><span editable-text="user.pan" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.pan|| '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Pay Salary</td>
+                <td><span editable-text="user.paySalary" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.paySalary || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Reason</td>
+                <td><span editable-text="user.reason" id="padtd" e-focus-me="user.isFocused" e-form="tableform">{{user.reason || '--' }}</span></td>
+            </tr>
+        </table>
+        <div id="editingpad">
+            <button id="save" type="submit" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+            <button id="edit" type="button" class="btn btn-default" ng-show="!tableform.$visible" ng-click="tableform.$show()">
+            <span  id="symbol" class="glyphicon glyphicon-pencil"></span>
+       </button>
+            <button type="button" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel
+       </button>
+        </div>
+    </form>
+</div>

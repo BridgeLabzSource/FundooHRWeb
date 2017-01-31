@@ -1,0 +1,56 @@
+<div ng-controller='HrDataCtrl' id="personalCtrl" ng-init="getHrData();">
+    <form editable-form name="tableform" onaftersave="saveTable()" id="formsize">
+        <table class="table-condensed" id="personalData">
+            <tr>
+                <td>Hiring City</td>
+                <td><span editable-text="user.hiringCity" e-focus-me="user.isFocused" e-form="tableform" onbeforesave="checkName($data)"
+                        id="padtd">{{user.hiringCity || '--'}}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Fellowship Period</td>
+                <td><span editable-text="user.fellowshipPeriod" e-focus-me="user.isFocused" e-form="tableform">{{user.fellowshipPeriod || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">BL Start Date</td>
+                <td><span editable-text="user.blStartDate" e-focus-me="user.isFocused" e-form="tableform">{{user.blStartDate || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Company Start Date</td>
+                <td><span editable-text="user.companyJoinDate" e-focus-me="user.isFocused" e-form="tableform">{{user.companyJoinDate || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Company End Date</td>
+                <td><span editable-text="user.companyLeaveDate" e-focus-me="user.isFocused" e-form="tableform">{{user.companyLeaveDate || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Engg Contract Initiated</td>
+                <td><span editable-text="user.enggContractInitiated" e-focus-me="user.isFocused" e-form="tableform">{{user.enggContractInitiated || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Comp Contract initiated</td>
+                <td><span editable-text="user.compContractInitiated" e-focus-me="user.isFocused" e-form="tableform">{{user.compContractInitiated || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Comp Contract Signed</td>
+                <td><span editable-text="user.compContractSigned" e-focus-me="user.isFocused" e-form="tableform">{{user.compContractSigned || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Contract Sign Date</td>
+                <td><span editable-text="user.contractSignDate" e-focus-me="user.isFocused" e-form="tableform">{{user.contractSignDate || '--' }}</span></td>
+            </tr>
+            <tr>
+                <td id="spantd">Initiate Transfer</td>
+                <td><span editable-text="user.initiateTransfer" e-focus-me="user.isFocused" e-form="tableform">{{user.initiateTransfer || '--' }}</span></td>
+            </tr>
+        </table>
+        <div id="editingpad">
+            <button id="save" type="submit" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+            <button id="edit" type="button" class="btn btn-default" ng-show="!tableform.$visible" ng-click="tableform.$show()">
+    <span  id="symbol" class="glyphicon glyphicon-pencil"></span>
+    </button>
+            <button type="button" ng-show="tableform.$visible" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel
+    </button>
+        </div>
+
+    </form>
+</div>

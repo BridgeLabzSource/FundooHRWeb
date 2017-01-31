@@ -1,0 +1,99 @@
+<div id="emp-profile" ng-init="getEmployeeData();">
+    <div id="emp-details">
+        <div id="emp-image">
+            <img ng-src="{{empdetails.imageUrl}}" alt="{{empdetails.employeeName}}">
+            <!--<img ng-src="images/logo.png"/>-->
+        </div>
+        <div id="emp-info">
+            <div id="emp-id">
+                <h4 id="emp-name">
+                    {{empdetails.employeeName}}</h4>
+                <h4>
+                    <span style="color:#3B5372;font-weight:bold;">Id</span> <span style="color:#3B5372;">{{empdetails.engineerId}}</span>
+                </h4>
+            </div>
+            <div id="emp-dataTable">
+                <table id="emp-personal">
+                    <tr>
+                        <td>Status</td>
+                        <td>{{empdetails.employeeStatus}}</td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>{{empdetails.company}}</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>{{empdetails.mobile}}</td>
+                    </tr>
+                    <tr>
+                        <td>EmailId</td>
+                        <td>{{empdetails.emailId}}</td>
+                    </tr>
+                </table>
+                <table id="emp-company">
+                    <tr>
+                        <td>BL Start Date</td>
+                        <td>{{empdetails.blStartDate}}</td>
+                    </tr>
+                    <tr>
+                        <td>Company Start Date</td>
+                        <td>{{empdetails.companyJoinDate}}</td>
+                    </tr>
+                    <tr>
+                        <td>Company Leave Date</td>
+                        <td>{{empdetails.companyLeaveDate}}</td>
+                    </tr>
+                    <tr>
+                        <td>Leaves Taken</td>
+                        <td>{{empdetails.leaveTaken}}</td>
+                    </tr>
+                </table>
+            </div>
+            <!--end of emp-dataTable-->
+        </div>
+        <!--end of emp-info-->
+    </div>
+    <!--end of emp-details-->
+</div>
+<div id="line"> </div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="inactive" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".Attendence" data-toggle="offcanvas"><span><img ng-src="images/.png"></img></span><b>Attendence</b></a></div>
+            </li>
+            <li class="active" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".Personal" data-toggle="offcanvas"><span><img ng-src="images/face - material.png"></img></span><b>Personal</b></a></div>
+            </li>
+            <li class="inactive" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".ProfileDetails" data-toggle="offcanvas"><span><img ng-src="images/art_track - material.png"></img></span><b>Profile</b></a></div>
+            </li>
+            <li class="inactive" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".HrData" data-toggle="offcanvas"><span><img ng-src="images/Group.png"></img></span><b>HRData</b></a></div>
+            </li>
+            <li class="inactive" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".Bank" data-toggle="offcanvas"><span><img ng-src="images/ion-card - Ionicons.png"></img></span><b>Bank</b></a></div>
+            </li>
+            <li class="inactive" ui-sref-active="active" ng-if="isAuth()">
+                <div><a ui-sref=".TrackingSheet" data-toggle="offcanvas"><span><img ng-src="images/ion-android-compass - Ionicons.png"></img></span><b>TrackingSheet</b></a></div>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container">
+            <div class="row" id="body-content">
+                <div class="col-lg-12 col-xs-12 col-md-12" id="side-content">
+                    <span> <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><img id="icon" ng-src="images/more_vert - material.png"/></a><span>
+                     <div id="engView">
+                         <ui-view> </ui-view>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+<script src="js/toggle.js"></script>
