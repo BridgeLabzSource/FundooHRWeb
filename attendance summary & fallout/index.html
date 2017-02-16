@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title> FundooHr </title>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="css/Font.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" type="text/less" href="css/Calendar.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-app="mainApp" class="{{bodyClass}} foo bar"  ng-controller="GlobalCtrl">
+<!--View Area-->
+<ui-view></ui-view>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js" charset="utf-8"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js" charset="utf-8"></script>
+<script src="bower_components/angular-resource/angular-resource.js" charset="utf-8"></script>
+<script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/satellizer/dist/satellizer.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+<script src="bower_components/less/dist/less.min.js" charset="utf-8"></script>
+<script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+<script src="bower_components/moment/min/moment.min.js" charset="utf-8"></script>
+
+<script src="app.js"></script>
+<script src="controller/LoginCtrl.js"></script>
+<script src="controller/HomeCtrl.js"></script>
+<script src="controller/LogoutCtrl.js"></script>
+<script src="controller/GlobalCtrl.js"></script>
+<script src="controller/DashboardCtrl.js"></script>
+<script src="controller/FalloutCtrl.js"></script>
+<script src="controller/UnmarkedEmpctrl.js"></script>
+<script src="directive/Calandar.js"></script>
+<script src="directive/Fallout.js"></script>
+<script src="directive/UnmarkedEmp.js"></script>
+<script src="services/RestService.js"></script>
+
+<script>
+  $(document).on('click', function() {
+    $('.collapse').collapse('hide');
+    });
+</script>
+
+</html>
