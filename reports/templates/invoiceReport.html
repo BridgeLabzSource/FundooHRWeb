@@ -1,0 +1,27 @@
+<div class="AR" ng-controller="AttinCtrl">
+    <h6 class="invoice-Report">Invoice Report</h6>
+    <div class="num1"><span class="num">30/70</span>&nbsp<span class="Internship">Internship</span></div>
+</div>
+<div id="aligncard" class="card">
+    <div id="main" class="col-md-6 col-lg-4 col-xs-12" ng-repeat="value in attendanceReport track by $index">
+        <div class="cmp"><input type="checkbox" ng-model="value.selected" ng-checked="allCompany" ng-change="toggleAll($index)">
+            <span class="span">{{value.company}}</span></div>
+        <div>
+            <div id="main1">
+                <table>
+                    <tr ng-repeat="x in value.employeeList track by $index">
+                        <td width="15%"><input type="checkbox" ng-model="x.selected" ng-checked="allCompany" ng-change="optionToggled($index)" />&nbsp &nbsp&nbsp{{x.employeeName}}{{emp[index]}}
+                        </td>
+                        <td class="Leave" align=bottom; width="20%"  ng-style="{color:(x.employeeLeave >2 ?'red':'green')}">{{x.employeeLeave+" Leaves"}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+<br><br>
+<div class="Select-All"><input type="checkbox" ng-model="allCompany" ng-click="checkAll()"/>Select All</div><br/>
+
+<a ui-sref="home.zip"><img class="next1" src="images/next.png"></img>
+    <h6 class="next">Next</h6></a>

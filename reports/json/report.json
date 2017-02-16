@@ -1,0 +1,136 @@
+[
+{
+    "id": 1,
+    "name":"Mrunal desai",
+    "status":"Internship",
+    "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+  "id": 2,
+  "name":"Arati Patel",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+  "id": 3,
+  "name":"Arjun thakur",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+  "selected" :false
+},
+{
+  "id": 4,
+  "name": "P V raman",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+  "id": 5,
+  "name":"Aman Mehra",
+  "status":"InternShip",
+  "Company":"Next education",
+    "selected" :false
+},
+{
+  "id": 6,
+  "name":"kartik hamingi",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+  "id": 7,
+  "name":"Priyanka Shetty",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+    "id": 8,
+    "name":"Mrunal desai",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" :false
+},
+{
+  "id": 9,
+  "name":"Arati Patel",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" :false
+},
+{
+    "id": 10,
+    "name":"Mrunal desai",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" :false
+},
+{
+  "id":11,
+  "name":"Arati Patel",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" : false
+},
+{
+    "id": 12,
+    "name":"swati sd",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" : false
+},
+{
+  "id": 13,
+  "name":"shilpa reddy",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" : false
+},
+{
+    "id": 14,
+    "name":"Mrunal desai",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" : false
+},
+{
+  "id": 15,
+  "name":"priyanka g",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" : false
+},
+{
+    "id": 16,
+    "name":"Mrunal desai",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" : false
+},
+{
+  "id": 17,
+  "name":"Arati Patel",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" : false
+},
+{
+    "id": 18,
+    "name":"tanvee ",
+    "status":"Internship",
+    "Company":"Meru",
+      "selected" : false
+},
+{
+  "id": 19,
+  "name":"pranali patil",
+  "status":"Fellowship",
+  "Company":"BridgeLabz",
+    "selected" : false
+}
+
+]

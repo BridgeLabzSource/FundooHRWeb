@@ -1,0 +1,147 @@
+{"Invoice":[
+  {
+    "Company": "MERU",
+    "selected": "false",
+
+    "EmplList":
+    [{
+      "name": "Arati Patel",
+      "L_status": "0 Leaves",
+      "selected": "false"
+    },
+    {
+      "name": "Arjun Thakur",
+      "L_status": "1 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "P V raman",
+      "L_status": "2 Leaves",
+      "selected": "false"
+    },
+    {
+      "name": "P V raman",
+      "L_status": "3 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "P V raman",
+      "L_status": "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "P V raman",
+      "L_status": "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "P V raman",
+      "L_status": "0 Leaves",
+        "selected": "false"
+    }
+  ]},
+  {
+    "Company":"NEXT-EDUCATION",
+      "selected": "false",
+    "EmplList":
+    [{
+      "name": "priyanka",
+      "L_status": "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "Arjun Thakur",
+      "L_status": "0 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "shilpa",
+      "L_status": "1 Leaves",
+        "selected": "false"
+    }
+  ]},
+
+  {
+    "Company": "Craftwilla",
+      "selected": "false",
+    "EmplList":
+    [{
+      "name": "priyanka",
+      "L_status": "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "swati",
+      "L_status": "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "pranali",
+      "L_status":  "2 Leaves",
+        "selected": "false"
+    }
+  ]},
+
+  {
+    "Company": "Valupitch",
+    "selected": "false",
+    "EmplList":
+    [{
+      "name": "bhavana",
+      "L_status":  "1 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "nikita",
+      "L_status":  "0 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "priyanka",
+      "L_status":  "2 Leaves",
+        "selected": "false"
+    }
+  ]},
+
+  {
+    "Company": "GreyTip",
+      "selected": "false",
+    "EmplList":
+    [{
+      "name": "priyanka",
+      "L_status":  "2 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "priyanka",
+      "L_status":  "1 Leaves",
+        "selected": "false"
+    },
+    {
+      "name": "priyanka",
+      "L_status":  "0 Leaves",
+        "selected": "false"
+    }
+  ]},  {
+      "Company": "MERU",
+      "selected": "false",
+
+      "EmplList":
+      [{
+        "name": "Arati Patel",
+        "L_status":  "0 Leaves",
+        "selected": "false"
+      },
+      {
+        "name": "Arjun Thakur",
+        "L_status":  "2 Leaves",
+          "selected": "false"
+      },
+      {
+        "name": "P V raman",
+        "L_status":  "0 Leaves",
+          "selected": "false"
+      }
+    ]}
+]
+}
