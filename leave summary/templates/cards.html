@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row cards">
+        <div class="col-lg-4  col-md-6 col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text">Attendance summary<span class="action"><img class="toc" src="images/ic_toc.png"/></img>
+                      <span class="tooltiptext">View Attendance summary</span>
+                    </span>
+                  </h3>
+                    <div class="bottom-align-text">
+                        <span class="date1">{{ today | date : "dd,MMMM y" }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-6 col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text">Attendance Fallout<span class="action"><img  class="toc" src="images/ic_toc.png"/></img>
+                      <span class="tooltiptext">View Attendance Fallout</span>
+                    </span>
+                  </h3>
+                    <div class="bottom-align-text">
+                        <span class="date2">{{ today | date : "MMMM y" }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-6  col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text">Leave summary<span class="action">
+                      <a class="card-action" ui-sref="home.Attendence"><img class="toc" src="images/ic_toc.png"/></img>
+                        <span class="tooltiptext">View Leave summary</span>
+                        <div><span class="leave">{{leave}}</span></div>
+                        <div><span class="status">uptill</span></div>
+                      </a>
+                    </span>
+                  </h3>
+                    <div class="bottom-align-text">
+                        <span class="date3">{{ today | date : "MMMM y" }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-6  col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text1">Engineers</h3><span class="action1"><img class="toc1" src="images/ic_toc.png"/></img><span class="tooltiptext">View Engineers</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-6 col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text1">Clients</h3><span class="action1"><img class="toc1" src="images/ic_toc.png"/></img><span class="tooltiptext">View Clients</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-6 col-sm-6 col-xs-12">
+            <div class="sidebar">
+                <div class="header">
+                    <h3 class="text1">Reports</h3><span class="action1"><img class="toc1" src="images/ic_toc.png"/></img><span class="tooltiptext">View Reports</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

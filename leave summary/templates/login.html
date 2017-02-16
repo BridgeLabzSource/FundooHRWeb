@@ -1,0 +1,29 @@
+<div class="mainpage">
+<div class="login-box">
+    <img src="images/logo.png" />
+    <div class="login">
+        <div>Login</div>
+        <form name="Form" method="post" ng-submit="login()">
+            <md-input-container class="md-block" id="input1">
+                <label>Email</label>
+                <!-- text field to accept email from user -->
+                <input type="text" name="email" ng-model="user.emailId" ng-pattern="emailFormat" required="" />
+                <div ng-messages="Form.username.$error.pattern">
+                    <div ng-message="ng-pattern">Enter Valid email</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block" id="input2">
+                <label>Password</label>
+                <!-- pasword field to accept password from user -->
+                <input type="password" name="password" ng-model="user.password" ng-pattern="passwordFormat" required="" />
+                <div ng-messages="Form.password.$error" role="alert" multiple=""></div>
+            </md-input-container>
+            <!-- Login button and link to go home page -->
+            <button ng-disabled="!Form.$valid" type="submit" class="md-raised"> Login </button>
+            <div><span class="text-danger">{{ error }}</span></div>
+            <span class="show" ng-show="Form.email.$error.pattern">Please enter correct email</span>
+            <span class="show" ng-show="Form.password.$error.pattern">Please enter correct password</span>
+        </form>
+    </div>
+</div>
+</div>

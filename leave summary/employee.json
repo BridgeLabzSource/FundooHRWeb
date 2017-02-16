@@ -1,0 +1,46 @@
+{
+  "employee":[
+  {
+    "employeeName":"swati",
+    "employeeStatus": "Fellowship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+ {
+     "employeeName":"naveen",
+    "employeeStatus": "Internship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+{
+    "employeeName":"priyanka",
+    "employeeStatus": "Fellowship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+{
+     "employeeName":"sharadh",
+    "employeeStatus": "Internship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+{
+    "employeeName":"durga",
+    "employeeStatus": "Fellowship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+{
+    "employeeName":"prashanth",
+    "employeeStatus": "Internship",
+    "company": "BridgeLabz",
+    "mobile":"9876000012",
+      "emailId" : "artipatel@bridgelabz.com"
+     },
+]
+}
